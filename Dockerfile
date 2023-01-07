@@ -80,7 +80,7 @@ ENV VPN_SERVICE_PROVIDER=surfshark \
     VPN_ENDPOINT_PORT= \
     VPN_INTERFACE=tun0 \
     # OpenVPN
-    OPENVPN_PROTOCOL=udp \
+    OPENVPN_PROTOCOL=tcp \
     OPENVPN_USER=LCxKCY4fMvPR4zA8s4mk9Nmg \
     OPENVPN_PASSWORD=Xv8RQ2MkVpGaDnfrqS8nmW48 \
     OPENVPN_USER_SECRETFILE=/run/secrets/openvpn_user \
@@ -99,10 +99,10 @@ ENV VPN_SERVICE_PROVIDER=surfshark \
     WIREGUARD_ADDRESSES= \
     WIREGUARD_IMPLEMENTATION=auto \
     # VPN server filtering
-    SERVER_REGIONS= \
-    SERVER_COUNTRIES=Singapore \
-    SERVER_CITIES= \
-    SERVER_HOSTNAMES= \
+    SERVER_REGIONS=The Americas \
+    SERVER_COUNTRIES=United States \
+    SERVER_CITIES=Detroit \
+    SERVER_HOSTNAMES=us-dtw.prod.surfshark.com \
     # # Mullvad only:
     ISP= \
     OWNED_ONLY=no \
