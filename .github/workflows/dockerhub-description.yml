@@ -1,0 +1,25 @@
+name: Docker Hub description
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - README.md
+      - .github/workflows/dockerhub-description.yml
+jobs:
+  docker-hub-description:
+    if: github.repository == 'qdm12/gluetun'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: peter-evans/dockerhub-description@v3
+        with:
+          username: qmcgaw
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          repository: qmcgaw/gluetun
+          short-description: Lightweight Swiss-knife VPN client to connect to several VPN providers
+          readme-filepath: README.md

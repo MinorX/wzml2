@@ -1,0 +1,102 @@
+linters-settings:
+  misspell:
+    locale: US
+
+issues:
+  exclude-rules:
+    - path: _test\.go
+      linters:
+        - dupl
+        - goerr113
+        - containedctx
+    - path: "internal\\/server\\/.+\\.go"
+      linters:
+        - dupl
+    - path: "internal\\/configuration\\/settings\\/.+\\.go"
+      linters:
+        - dupl
+    - text: "^mnd: Magic number: 0[0-9]{3}, in <argument> detected$"
+      source: "^.+= os\\.OpenFile\\(.+, .+, 0[0-9]{3}\\)"
+      linters:
+        - gomnd
+    - text: "^mnd: Magic number: 0[0-9]{3}, in <argument> detected$"
+      source: "^.+= os\\.MkdirAll\\(.+, 0[0-9]{3}\\)"
+      linters:
+        - gomnd
+    - linters:
+        - lll
+      source: "^//go:generate .+$"
+    - text: "returns interface \\(github\\.com\\/vishvananda\\/netlink\\.Link\\)"
+      linters:
+        - ireturn
+
+linters:
+  enable:
+    # - cyclop
+    # - errorlint
+    - asasalint
+    - asciicheck
+    - bidichk
+    - bodyclose
+    - containedctx
+    - decorder
+    - dogsled
+    - dupl
+    - durationcheck
+    - errchkjson
+    - errname
+    - execinquery
+    - exhaustive
+    - exportloopref
+    - forcetypeassert
+    - gci
+    - gochecknoglobals
+    - gochecknoinits
+    - gocognit
+    - goconst
+    - gocritic
+    - gocyclo
+    - godot
+    - goerr113
+    - goheader
+    - goimports
+    - gomnd
+    - gomoddirectives
+    - goprintffuncname
+    - gosec
+    - grouper
+    - importas
+    - interfacebloat
+    - ireturn
+    - lll
+    - maintidx
+    - makezero
+    - misspell
+    - nakedret
+    - nestif
+    - nilerr
+    - nilnil
+    - noctx
+    - nolintlint
+    - nosprintfhostport
+    - prealloc
+    - predeclared
+    - promlinter
+    - reassign
+    - revive
+    - rowserrcheck
+    - sqlclosecheck
+    - tenv
+    - thelper
+    - tparallel
+    - unconvert
+    - unparam
+    - usestdlibvars
+    - wastedassign
+    - whitespace
+
+run:
+  skip-dirs:
+    - .devcontainer
+    - .github
+    - doc
