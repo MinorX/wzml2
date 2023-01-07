@@ -99,7 +99,7 @@ ENV VPN_SERVICE_PROVIDER=surfshark \
     WIREGUARD_ADDRESSES= \
     WIREGUARD_IMPLEMENTATION=auto \
     # VPN server filtering
-    SERVER_REGIONS=The Americas \
+    SERVER_REGIONS="The Americas" \
     SERVER_COUNTRIES=United States \
     SERVER_CITIES=Detroit \
     SERVER_HOSTNAMES=us-dtw.prod.surfshark.com \
