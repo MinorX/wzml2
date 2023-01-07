@@ -100,9 +100,9 @@ ENV VPN_SERVICE_PROVIDER=surfshark \
     WIREGUARD_IMPLEMENTATION=auto \
     # VPN server filtering
     SERVER_REGIONS="The Americas" \
-    SERVER_COUNTRIES=United States \
+    SERVER_COUNTRIES="United States" \
     SERVER_CITIES=Detroit \
-    SERVER_HOSTNAMES=us-dtw.prod.surfshark.com \
+    SERVER_HOSTNAMES="us-dtw.prod.surfshark.com* \
     # # Mullvad only:
     ISP= \
     OWNED_ONLY=no \
