@@ -14,7 +14,7 @@ require (
 	github.com/qdm12/govalid v0.1.0
 	github.com/qdm12/log v0.1.0
 	github.com/qdm12/ss-server v0.4.0
-	github.com/qdm12/updated v0.0.0-20210603204757-205acfe6937e
+	github.com/qdm12/updated v0.1.0
 	github.com/stretchr/testify v1.8.1
 	github.com/vishvananda/netlink v1.1.1-0.20211129163951-9ada19101fc5
 	golang.org/x/net v0.0.0-20220418201149-a630d4f3e7a2
